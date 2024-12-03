@@ -15,7 +15,7 @@ import 'config/routes.dart';
 import 'package:market_list/provider/counter_controller.dart';
 import 'list_screen.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   runApp(

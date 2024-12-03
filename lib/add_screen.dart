@@ -414,10 +414,10 @@ class _AddProductPageState extends State<AddProductPage> {
   // Função para limpar campos
   void _limparCampos() {
     setState(() {
-      tipoController.clear();
+      //tipoController.clear();
       subtipoController.clear();
       valorController.clear();
-      _selectedFirstSpinner = null;
+      //_selectedFirstSpinner = null;
       _selectedSecondSpinner = null; // Reseta o segundo spinner
       _selectedTipo = null;
       _selectedSubtipo = null;
