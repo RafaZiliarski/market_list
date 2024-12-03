@@ -1,16 +1,18 @@
 # market_list
 
-A new Flutter project.
+Um projeto utilizando o framework Flutter.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Esse projeto consiste em uma lista de mercado, onde pode-se fazer uma 
+conversão do valor total da lista em reais para dólar americano.
 
-A few resources to get you started if this is your first Flutter project:
+O projeto utiliza o provider para fazer adição ou subtração das quantidades, também
+utiliza Retrofit para fazer um GET de uma Rest API Free, onde todo dia é atualizado os\
+valores de conversão.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Para navegar entre telas, é utilizado a ferramenta de rotas nomeadas, podendo
+passar dados entre as mesmas.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Utilizou-se o vibrator para fazer uso do plataform channel, onde o Flutter
+requisita ao android nativo para vibrar o dispositivo.
