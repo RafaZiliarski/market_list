@@ -104,33 +104,30 @@ class _ListaItensScreenState extends State<ListScreen> {
         itemBuilder: (context, index) {
           final dado = _itens[index];
           return ListTile(
-            title: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                SizedBox(
-                  width: 120,
-                  child: Text(dado.descricao)
-                ),
-                SizedBox(
-                  child: Text('R\$: ${dado.valor}')
-                ),
-                SizedBox(
-                    child: Text(dado.quantidade)
-                ),
-              ],
-            ),
-            trailing: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                IconButton(
-                  icon: const Icon(Icons.edit),
-                  onPressed: () => _editarItem(dado),
-                ),
-                IconButton(
-                  icon: const Icon(Icons.delete),
-                  onPressed: () => _deletarItem(dado.id!),
-                ),
-              ],
+            title: Card(
+              elevation: 5,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const SizedBox(),
+                  Column(
+                    children: [
+                      Text(dado.descricao),
+                      Text(dado.quantidade),
+                    ],
+                  ),
+                  const SizedBox(width: 0.1),
+                  Text('R\$: ${dado.valor}'),
+                  IconButton(
+                    icon: const Icon(Icons.edit),
+                    onPressed: () => _editarItem(dado),
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.delete),
+                    onPressed: () => _deletarItem(dado.id!),
+                  ),
+                ],
+              ),
             ),
           );
         },
