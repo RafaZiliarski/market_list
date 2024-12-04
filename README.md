@@ -16,3 +16,6 @@ passar dados entre as mesmas.
 
 Utilizou-se o vibrator para fazer uso do plataform channel, onde o Flutter
 requisita ao android nativo para vibrar o dispositivo.
+
+Link da api free de cotação do dolar americano para real:
+https://economia.awesomeapi.com.br/json/last/USD-BRL
